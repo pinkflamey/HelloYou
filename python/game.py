@@ -57,17 +57,12 @@ print("\nPress [ENTER] to start...", end="")
 
 input()
 
-changeScreenSize(50, 2)
+changeScreenSize(50, 4)
 
-print("Loading...".center(50, "-"))
+title = "Verhaal van een nieuwkomer".center(50, "-")
+slowPrint("\n" + title + "\n", 0.02, 0.04)
 waitingDots(50, 2, 0.02, "/")
 
 changeScreenSize(100, 25)
 
-print("-", end="")
-print("Verhaal van een nieuwkomer".center(98, "="), end="")
-print("-")
-
-slowPrint("")
-
-input()
+t1()
