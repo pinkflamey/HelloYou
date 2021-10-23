@@ -307,22 +307,32 @@ def q10():
         print("Voer A of B in.")
 
 # There is no q11
+inventory = [""]
 def q12():
+    global inventory
+
     print("\n" + "Vraag 12".center(100, "-") + "\n")
     slowPrint(getText("txts/" + "q12" + ".txt") + "\n\n", 0.01, 0.08)
 
-    slowPrint("A. Ja".center(100), 0.01, 0.02)
-    slowPrint("B. Nee".center(100), 0.01, 0.02)
+    slowPrint("A. Fotolijstje met een foto van je gezin".center(100), 0.01, 0.02)
+    slowPrint("B. Je mobiele telefoon".center(100), 0.01, 0.02)
+    slowPrint("C. De knuffelbeer die je sinds je geboorte hebt".center(100), 0.01, 0.02)
 
     a = ""
     
     while a == "":
         a = input("\n\nAntwoord:")
         if a == "a" or a == "A":
+            inventory[0] = "photo"
+            print("\nJe hebt gekozen om de foto mee te nemen. [εϊз]")
             t18()
         elif a == "b" or a == "B":
+            inventory[0] = "phone"
+            print("\nJe hebt gekozen om de telefoon mee te nemen. [εϊз]")
             t18()
         elif a == "c" or a == "C":
+            inventory[0] = "bear"
+            print("\nJe hebt gekozen om de knuffelbeer mee te nemen. [εϊз]")
             t18()
         else:
             print("Voer A of B in.")
@@ -406,6 +416,19 @@ def q22():
         else:
             print("Voer A of B in.")
         print("Voer A of B in.")
+
+
+# Questions
+# ----------------------------
+
+def b1():
+    if inventory[0] == "phone":
+        t22()
+    else:
+        t21()
+
+
+
 
 
 input()
