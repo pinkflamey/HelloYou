@@ -1,5 +1,7 @@
 from getText import *
 from slowPrint import *
+from clearScreen import *
+from changeScreenSize import *
 
 
 # Story sections
@@ -160,7 +162,7 @@ def q1():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t2()
         elif a == "b" or a == "B":
@@ -181,7 +183,7 @@ def q2():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t5()
         elif a == "b" or a == "B":
@@ -200,7 +202,7 @@ def q3():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t7()
         elif a == "b" or a == "B":
@@ -220,7 +222,7 @@ def q5():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t9()
         elif a == "b" or a == "B":
@@ -239,7 +241,7 @@ def q6():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t11()
         elif a == "b" or a == "B":
@@ -258,7 +260,7 @@ def q7():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t6()
         elif a == "b" or a == "B":
@@ -278,7 +280,7 @@ def q9():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t11()
         elif a == "b" or a == "B":
@@ -297,7 +299,7 @@ def q10():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t12()
         elif a == "b" or a == "B":
@@ -321,7 +323,7 @@ def q12():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             inventory[0] = "photo"
             print("\nJe hebt gekozen om de foto mee te nemen. [εϊз]")
@@ -340,7 +342,7 @@ def q12():
 
 def q13():
     print("\n" + "Vraag 13".center(100, "-") + "\n")
-    slowPrint(getText("txts/" + "q2" + ".txt") + "\n\n", 0.01, 0.08)
+    slowPrint(getText("txts/" + "q13" + ".txt") + "\n\n", 0.01, 0.08)
 
     slowPrint("A. Ja".center(100), 0.01, 0.02)
     slowPrint("B. Nee".center(100), 0.01, 0.02)
@@ -348,7 +350,7 @@ def q13():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t15()
         elif a == "b" or a == "B":
@@ -360,7 +362,7 @@ def q13():
 # There is no q14
 def q15():
     print("\n" + "Vraag 15".center(100, "-") + "\n")
-    slowPrint(getText("txts/" + "q2" + ".txt") + "\n\n", 0.01, 0.08)
+    slowPrint(getText("txts/" + "q15" + ".txt") + "\n\n", 0.01, 0.08)
 
     slowPrint("A. Ja".center(100), 0.01, 0.02)
     slowPrint("B. Nee".center(100), 0.01, 0.02)
@@ -368,7 +370,7 @@ def q15():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t17()
         elif a == "b" or a == "B":
@@ -388,7 +390,7 @@ def q18():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t19()
         elif a == "b" or a == "B":
@@ -408,7 +410,7 @@ def q22():
     a = ""
     
     while a == "":
-        a = input("\n\nAntwoord:")
+        a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t23()
         elif a == "b" or a == "B":
@@ -418,7 +420,7 @@ def q22():
         print("Voer A of B in.")
 
 
-# Questions
+# Branches
 # ----------------------------
 
 def b1():
@@ -428,7 +430,68 @@ def b1():
         t21()
 
 
+# Endings
+# ----------------------------
 
+def e1():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/gravestone.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e1" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
+
+def e2():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/gravestone.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e2" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
+
+def e3():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/gravestone.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e3" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
+
+def e4():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/gravestone.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e4" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
+
+def e5():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/yingyang.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e5" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
+
+def e6():
+    changeScreenSize(34, 25)
+
+    print("\n" + "Einde".center(100, "-") + "\n")
+    print(getText("txtimgs/yingyang.txt"))
+    slowPrint("\n\n" + getText("txts/" + "e6" + ".txt") + "\n\n", 0.01, 0.08)
+    input("\n[Druk op enter om terug naar het begin te gaan]")
+    clearScreen()
+    t1()
 
 
 input()
