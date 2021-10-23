@@ -10,13 +10,9 @@ from time import sleep
 from getText import *
 from slowPrint import *
 from printLines import *
+from clearScreen import *
 
-platform = platform
-def clearScreen(): # Clears the screen for Windows, Mac and Linux
-    if platform == "win32":
-        os.system('cls')
-    else:
-        os.system('clear')
+
 
 # "Waiting" animation with dots. Allows control over the number of dots in each cycle, the amount of cycles, and the time between each dot.
 def waitingDots(num_of_dots, num_of_loops, dot_speed, char):
@@ -64,5 +60,7 @@ slowPrint("\n" + title + "\n", 0.02, 0.04)
 waitingDots(50, 2, 0.02, "/")
 
 changeScreenSize(100, 25)
+
+clearScreen()
 
 t1()
