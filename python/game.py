@@ -11,6 +11,7 @@ from getText import *
 from slowPrint import *
 from printLines import *
 from clearScreen import *
+from changeScreenSize import *
 
 
 
@@ -28,11 +29,7 @@ def waitingDots(num_of_dots, num_of_loops, dot_speed, char):
             stdout.write("\b" * num_of_dots)
         l = l + 1
 
-def changeScreenSize(col, lin):
-    if platform == "win32":
-        os.system("mode con: cols="+str(col)+" lines="+str(lin))
-    else:
-        os.system("resize -s "+str(lin)+" "+str(col))
+
 
 
 
