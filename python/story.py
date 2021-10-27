@@ -161,7 +161,7 @@ def q1():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b" or a.lower() != "c":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t2()
@@ -171,7 +171,6 @@ def q1():
             t4()
         else:
             print("Voer A, B of C in.")
-        print("Voer A, B of C in.")
 
 def q2():
     print("\n" + "Vraag 2".center(100, "-") + "\n")
@@ -492,6 +491,3 @@ def e6():
     input("\n[Druk op enter om terug naar het begin te gaan]")
     clearScreen()
     t1()
-
-
-input()
