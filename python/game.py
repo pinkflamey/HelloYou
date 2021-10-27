@@ -15,6 +15,7 @@ from changeScreenSize import *
 
 
 
+
 # "Waiting" animation with dots. Allows control over the number of dots in each cycle, the amount of cycles, and the time between each dot.
 def waitingDots(num_of_dots, num_of_loops, dot_speed, char):
     l = 0
@@ -30,13 +31,10 @@ def waitingDots(num_of_dots, num_of_loops, dot_speed, char):
         l = l + 1
 
 
-
-
-
 #-------------------------------------------
 # Story functions
-from story import *
 
+from story import *
 
 
 #-------------------------------------------
@@ -46,18 +44,21 @@ changeScreenSize(66, 38)
 
 print(getText("txtimgs/tree.txt"))
 print(getText("txtimgs/helloyou.txt"))
-print("\nPress [ENTER] to start...", end="")
+input("Press [ENTER] to start...")
 
-input()
+sleep(1)
 
 changeScreenSize(50, 4)
 
 title = "Verhaal van een nieuwkomer".center(50, "-")
-slowPrint("\n" + title + "\n", 0.02, 0.04)
-waitingDots(50, 2, 0.02, "/")
+print("\n"+title)
+loading = "[»-(¯`·.·´¯)->...LOADING...<-(¯`·.·´¯)-«]".center(50)
+slowPrint(loading, 0.01, 0.1)
 
 changeScreenSize(100, 25)
 
 clearScreen()
+
+
 
 t1()
