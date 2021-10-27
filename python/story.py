@@ -8,6 +8,8 @@ from changeScreenSize import *
 # ----------------------------
 
 def t1():
+    changeScreenSize(100, 25)
+
     print("\n" + "Sectie 1".center(100, "-") + "\n")
     slowPrint(getText("txts/" + "t1.txt") + "\n", 0.01, 0.08)
     input("\n[Druk op enter om door te gaan]")
@@ -433,9 +435,9 @@ def b1():
 # ----------------------------
 
 def e1():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e1" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
@@ -443,9 +445,9 @@ def e1():
     t1()
 
 def e2():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e2" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
@@ -453,9 +455,9 @@ def e2():
     t1()
 
 def e3():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e3" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
@@ -463,9 +465,9 @@ def e3():
     t1()
 
 def e4():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e4" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
@@ -473,9 +475,9 @@ def e4():
     t1()
 
 def e5():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/yingyang.txt"))
     slowPrint("\n\n" + getText("txts/" + "e5" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
@@ -483,9 +485,9 @@ def e5():
     t1()
 
 def e6():
-    changeScreenSize(34, 25)
+    changeScreenSize(34, 40)
 
-    print("\n" + "Einde".center(100, "-") + "\n")
+    print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/yingyang.txt"))
     slowPrint("\n\n" + getText("txts/" + "e6" + ".txt") + "\n\n", 0.01, 0.08)
     input("\n[Druk op enter om terug naar het begin te gaan]")
