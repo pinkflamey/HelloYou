@@ -1,2 +1,5 @@
 *.docx
 *.tmp
+python\__pycache__
+*.pyc
+python/__pycache__/story.cpython-39.pyc
