@@ -427,7 +427,7 @@ def e1():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e1" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
 
@@ -437,7 +437,7 @@ def e2():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e2" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
 
@@ -447,7 +447,7 @@ def e3():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e3" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
 
@@ -457,7 +457,7 @@ def e4():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/gravestone.txt"))
     slowPrint("\n\n" + getText("txts/" + "e4" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
 
@@ -467,7 +467,7 @@ def e5():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/yingyang.txt"))
     slowPrint("\n\n" + getText("txts/" + "e5" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
 
@@ -477,6 +477,6 @@ def e6():
     print("\n" + "Einde".center(34, "-") + "\n")
     print(getText("txtimgs/yingyang.txt"))
     slowPrint("\n\n" + getText("txts/" + "e6" + ".txt") + "\n\n", 0.01, 0.08)
-    input("\n[Druk op enter om terug naar het begin te gaan]")
+    input("\n[Druk op enter om terug naar het begin van het verhaal te gaan]")
     clearScreen()
     t1()
