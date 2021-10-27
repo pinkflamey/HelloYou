@@ -53,7 +53,8 @@ changeScreenSize(50, 4)
 title = "Verhaal van een nieuwkomer".center(50, "-")
 print("\n"+title)
 loading = "[»-(¯`·.·´¯)->...LOADING...<-(¯`·.·´¯)-«]".center(50)
-slowPrint(loading, 0.01, 0.1)
+slowPrint(loading, 0.01, 0.13)
+slowPrint("...", 0.8, 0.8)
 
 changeScreenSize(100, 25)
 
