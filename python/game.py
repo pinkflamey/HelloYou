@@ -56,7 +56,7 @@ loading = "[»-(¯`·.·´¯)->...LOADING...<-(¯`·.·´¯)-«]".center(50)
 slowPrint(loading, 0.01, 0.13)
 slowPrint("...", 0.8, 0.8)
 
-changeScreenSize(100, 25)
+
 
 clearScreen()
 
