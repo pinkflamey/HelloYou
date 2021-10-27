@@ -183,7 +183,7 @@ def q2():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t5()
@@ -191,8 +191,6 @@ def q2():
             t6()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
-
 def q3():
     print("\n" + "Vraag 3".center(100, "-") + "\n")
     slowPrint(getText("txts/" + "q3" + ".txt") + "\n\n", 0.01, 0.08)
@@ -202,7 +200,7 @@ def q3():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t7()
@@ -210,7 +208,6 @@ def q3():
             t6() # Flowchart says to lead to t8, but it doesn't exist; it leads to t6
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # q4 does not exist: t4() leads straight to q10()
 def q5():
@@ -222,7 +219,7 @@ def q5():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t9()
@@ -230,7 +227,6 @@ def q5():
             t6()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 def q6():
     print("\n" + "Vraag 6".center(100, "-") + "\n")
@@ -241,7 +237,7 @@ def q6():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t11()
@@ -249,7 +245,6 @@ def q6():
             t10()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 def q7():
     print("\n" + "Vraag 7".center(100, "-") + "\n")
@@ -260,7 +255,7 @@ def q7():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t6()
@@ -268,7 +263,6 @@ def q7():
             t9()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # There is no q8
 def q9():
@@ -280,7 +274,7 @@ def q9():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t11()
@@ -288,7 +282,6 @@ def q9():
             t10()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 def q10():
     print("\n" + "Vraag 10".center(100, "-") + "\n")
@@ -299,7 +292,7 @@ def q10():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t12()
@@ -307,7 +300,6 @@ def q10():
             t13()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # There is no q11
 inventory = [""]
@@ -323,7 +315,7 @@ def q12():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b" or a.lower() != "c":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             inventory[0] = "photo"
@@ -338,8 +330,7 @@ def q12():
             print("\nJe hebt gekozen om de knuffelbeer mee te nemen. [εϊз]")
             t18()
         else:
-            print("Voer A of B in.")
-        print("Voer A of B in.")
+            print("Voer A, B of C in.")
 
 def q13():
     print("\n" + "Vraag 13".center(100, "-") + "\n")
@@ -350,7 +341,7 @@ def q13():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t15()
@@ -358,7 +349,6 @@ def q13():
             t14()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # There is no q14
 def q15():
@@ -370,7 +360,7 @@ def q15():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t17()
@@ -378,7 +368,6 @@ def q15():
             t16()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # There is no q16 + q17; t16 and t17 lead directly to endings
 def q18():
@@ -390,7 +379,7 @@ def q18():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t19()
@@ -398,7 +387,6 @@ def q18():
             t20()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 # There is no q19 (t19 directly to ending), no q20 (replaced by b1) and no q21 (t21 directly to ending)
 def q22():
@@ -410,7 +398,7 @@ def q22():
 
     a = ""
     
-    while a == "":
+    while a.lower() != "a" or a.lower() != "b":
         a = input("\n\nAntwoord: ")
         if a == "a" or a == "A":
             t23()
@@ -418,7 +406,6 @@ def q22():
             t24()
         else:
             print("Voer A of B in.")
-        print("Voer A of B in.")
 
 
 # Branches
